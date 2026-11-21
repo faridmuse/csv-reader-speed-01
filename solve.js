@@ -21,9 +21,6 @@
 // commas — and only records holding a quote or a stray CR fall through to the
 // exact field-by-field reader below. Both paths push identical errors.
 
-const RE_UNQUOTED = /[,\r\n]/g;
-const RE_QUOTED = /["\r\n]/g;
-
 const COMMA = 0;
 const LINE_BREAK = 1;
 const END = 2;
